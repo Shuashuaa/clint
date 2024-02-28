@@ -1,12 +1,9 @@
 <template>
     <div class="nav">
         <div class="initial_display">
-            <!-- Insert your cool looking icons here -->
-            <!-- <img src="cool_icon.png" alt="Cool Icon"> -->
             <h1>...</h1>
         </div>
         <div class="display_after_hovering">
-            <!-- Profile details will appear here -->
             <h1>hi!</h1>
             <div style="display: flex; flex-direction: column;">
                 <button>Gallery</button>
@@ -151,7 +148,6 @@ body {
     z-index: 1;
     display: flex; 
     justify-content: center;
-    /* margin-left: -40vw; */
     height: 80vh;
     align-self: center;
     align-items: center;
@@ -163,17 +159,13 @@ body {
     overflow-y: hidden;
     white-space: nowrap;
     transition: all 0.2s;
-    /* transform: scale(0.98); */
-    /* will-change: transform; */
     user-select: none;
     cursor: pointer;
 }
 
 .items.active {
-    /* background: rgba(126, 109, 109, 0.3); */
     cursor: grabbing;
     cursor: -webkit-grabbing;
-    /* transform: scale(2); */
 }
 
 .item {
@@ -183,8 +175,8 @@ body {
     min-height: 300px;
     min-width: 400px;
     margin: 2em 1em;
-    position: relative; /* Add this to make absolute positioning work */
-    /* overflow: hidden; Ensure content overflow is hidden */
+    position: relative;
+    
     @media screen and (max-width: 500px) {
         min-height: 200px;
         min-width: 200px;
@@ -200,21 +192,21 @@ body {
 }
 
 .item img {
-    position: absolute; /* Position the image absolutely */
-    top: 0; /* Position from the top */
-    left: 0; /* Position from the left */
-    width: 100%; /* Cover the entire width of the parent container */
-    height: 100%; /* Cover the entire height of the parent container */
-    object-fit: cover; /* Maintain aspect ratio while covering */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .item p {
-    position: absolute; /* Position the paragraph absolutely */
-    bottom: 10px; /* Adjust the bottom position as needed */
-    right: 10px; /* Adjust the right position as needed */
-    margin: 0; /* Remove any default margin */
-    background: rgba(255, 255, 255, 0.5); /* Example background color with transparency */
-    padding: 5px; /* Example padding */
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 5px;
 }
 
 .blob {
@@ -267,17 +259,14 @@ body {
 
     @media screen and (max-width: 568px) {
         font-size: 50px;
-        /* color: blue; */
     }
 
     @media screen and (min-width: 569px) and (max-width: 768px) {
         font-size: 50px;
-        /* color: green; */
     }
 
     @media screen and (min-width: 769px) {
         font-size: 72px;
-        /* color: red; */
     }
 }
 
@@ -295,7 +284,6 @@ body {
     font-family: "Sansita", sans-serif !important;
     font-weight: 400 !important;
     font-style: italic !important;
-    /* font-size: clamp(3rem, -0.2813rem + 10.5vw, 5.625rem); */
     font-size: 14px;
     color: #141414;
     line-height: 1.5rem;
@@ -321,17 +309,17 @@ body {
 
 .display_after_hovering {
     height: 100vh;
-    display: none; /* Initially hide */
+    display: none;
 }
 
 .nav:hover .display_after_hovering {
-    display: flex; /* Display after hovering */
+    display: flex;
     flex-direction: column;
     justify-content: space-around; 
 }
 
 .nav:hover .initial_display {
-    display: none; /* Display after hovering */
+    display: none;
 }
 
 
