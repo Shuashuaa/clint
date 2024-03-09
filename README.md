@@ -1,4 +1,8 @@
+<img src="https://media4.giphy.com/media/ES4Vcv8zWfIt2/giphy.gif" width="400">
+
 # jaderhin-Sphere
+
+- [x] Vuejs3
 
 This template should help get you started developing with Vue 3 in Vite.
 
