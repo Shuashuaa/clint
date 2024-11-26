@@ -1,17 +1,13 @@
-<script>
-import { defineComponent } from 'vue';
-import HomeComp from '../components/HomeComp.vue'
+<script setup lang="ts">
+import LandingView from './LandingView.vue';
 
-export default defineComponent({
-	components: {
-		HomeComp
-	},
-});
-	
 </script>
 
 <template>
-	<main>
-		<HomeComp />
-	</main>
+	<LandingView 
+	landingNameTitle="Jaderhin Clint Austria Lucero" 
+	bgNameLeft="제이더린 클린트"
+	bgNameRight="오스트리아 루세로"/>
+	
+	<LandingView/>
 </template>
