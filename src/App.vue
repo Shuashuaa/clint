@@ -1,15 +1,19 @@
-<script>
-export default {
-	setup() {
-		
-	},
-}
+<script setup lang="ts">
+import Navbar from '@/components/Navbar.vue'
+
 </script>
 
-
 <template>
+	<div class="bg-[#F7CAC9] dark:bg-[#242625]">
+		<Navbar class="sticky top-0 z-20"/>
+		<RouterView/>
+	</div>
 	
-	<main>
-		<router-view /> 
-	</main>
 </template>
+
+<style>
+body{
+	color: var(--font-white);
+	background-color: var(--bg-black);
+}
+</style>
