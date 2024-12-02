@@ -8,3 +8,7 @@
 .fontbgr {
   font-family: var(--bg-font) !important;
 }
+
+* {
+  -webkit-font-smoothing: antialiased !important;
+}
