@@ -1,5 +1,18 @@
 <script setup lang="ts">
-// pi-copy will have a copy function upon click
+import copy from 'copy-text-to-clipboard';
+
+const copyEmail = (code: string) =>{
+    alert(`${code} is copied to clipboard`)
+    copy(code);
+}
+
+defineProps({
+    email: {
+        type: String,
+        default: 'default@email.com'
+    }
+})
+
 </script>
 
 <template>
@@ -7,8 +20,8 @@
         <div class="flex flex-col justify-center items-center p-[75px] *:dark:text-white *:text-[#242625] *:font-Inter">
             <p class="text-5xl pb-1 font-bold">is there a spark?</p>
             <p class="text-2xl pb-5">Let's Work Together!</p>
-            <p class="cursor-pointer border border-[#242625] dark:border-slate-100  rounded-xl p-2 px-4">
-                Jaderhin-Clint@sample.google.com 
+            <p @click="copyEmail(email)" class="cursor-pointer border border-[#242625] dark:border-slate-100 rounded-xl p-2 px-4">
+                {{ email }}
                 <i class="pi pi-copy ml-2"></i>
             </p>
         </div>
