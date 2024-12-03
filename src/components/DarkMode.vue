@@ -15,4 +15,5 @@ watchEffect(() => {
 
 <template>
     <i class="cursor-pointer" @click="toggleDarkMode" :class="[darkMode ? 'pi pi-sun' : 'pi pi-moon']"></i>
+    {{ darkMode }}
 </template>
