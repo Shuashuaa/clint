@@ -21,12 +21,12 @@ defineProps({
         class="flex flex-col items-center pt-5 justify-center overflow-hidden md:h-[95svh] bg-[#F7CAC9] bg-[radial-gradient(ellipse_80%_80%_at_80%_80%,#93a9d1,rgba(255,255,255,0))] 
         dark:bg-[#242625] dark:bg-[radial-gradient(ellipse_80%_80%_at_80%_80%,#93a9d1,rgba(255,255,255,0))] transition-all ease-in-out md:relative">
             
-            <p data-kinesisscroll-item data-ks-transform="scale" data-ks-strength="10" 
-            class="fontbgl text-[#ffd8d8] dark:text-[#2C2C2C] font-[sans-serif] font-black italic tracking-widest text-6xl md:text-9xl text-shadow-sm top-[20%] left-[10%] absolute">
+            <p data-kinesisscroll-item data-ks-transform="scale" data-ks-strength="20" 
+            class="fontbgl text-[#ffd8d8] dark:text-[#2C2C2C] font-[sans-serif] font-black italic tracking-widest text-5xl md:text-9xl text-shadow-sm top-[20%] left-[20%] w-1/2 md:w-full absolute">
                 {{ bgNameLeft }}
             </p>
-            <p data-kinesisscroll-item data-ks-transform="scale" data-ks-strength="10"
-            class="fontbgr text-[#b6d1cb] dark:text-[#2C2C2C] font-[sans-serif] font-black italic tracking-widest text-7xl md:text-8xl text-shadow-sm top-[50%] right-[20%] md:top-[40%] md:right-[10%] absolute">
+            <p data-kinesisscroll-item data-ks-transform="scale" data-ks-strength="20" 
+            class="fontbgr text-[#b6d1cb] dark:text-[#2C2C2C] font-[sans-serif] font-black italic tracking-widest text-6xl md:text-8xl text-shadow-sm top-[50%] right-5 md:top-[40%] md:right-[10%] w-1/2 absolute">
                 {{ bgNameRight }}
             </p>
 
