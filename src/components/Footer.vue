@@ -6,18 +6,24 @@ const copyEmail = (code: string) =>{
     copy(code);
 }
 
+const topFunction = () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
 defineProps({
     email: {
         type: String,
-        default: 'default@email.com'
+        default: "default@gmail.com"
     }
+    
 })
 
 </script>
 
 <template>
     <div class="w-full bg-white dark:bg-[#242625]">
-        <div class="flex flex-col justify-center items-center p-[75px] *:dark:text-white *:text-[#242625] *:font-Inter">
+        <div class="flex flex-col justify-center items-center py-[100px] *:dark:text-white *:text-[#242625] *:font-Inter">
             <p class="text-5xl pb-1 font-bold">is there a spark?</p>
             <p class="text-2xl pb-5">Let's Work Together!</p>
             <p @click="copyEmail(email)" class="cursor-pointer border border-[#242625] dark:border-slate-100 rounded-xl p-2 px-4">
@@ -26,21 +32,34 @@ defineProps({
             </p>
         </div>
 
-        <div class="flex flex-col md:flex-row justify-center md:justify-between items-center rounded-t-[2.5rem] shadow-inner p-12 gap-3 
+        <div class="flex flex-col md:flex-row justify-center md:justify-between items-center rounded-t-[2.5rem] shadow-inner py-[40px] px-[150px] gap-3 
         dark:bg-[#93a9d1] bg-[#F7CAC9] bg-[radial-gradient(ellipse_80%_80%_at_80%_80%,#93a9d1,rgba(255,255,255,0))] 
-        *:text-black *:font-Inter"
+        *:text-[#242625] *:font-Alumni_Sans *:tracking-wide"
         >
             <div class="flex flex-col items-center md:items-start">
-                <img class="mb-3" width="120" src="../assets/imgs/clint.png" alt="">
-                <h1 class="text-lg">@2024-Present</h1>
-                <p class="text-sm">Jaderhin Clint Lucero / Code by Joshua Tania</p>
+                <!-- <img class="mb-3" width="120" src="../assets/imgs/clint.png" alt=""> -->
+                <span class="mb-3 text-2xl text-white relative">
+                    <img class="absolute invisible dark:visible w-[50px] md:w-[40%]" src="../assets/imgs/CLINT-default.png" alt="">
+                    <img class="visible dark:invisible w-[50px] md:w-[40%]" src="../assets/imgs/CLINT-black.png" alt="">
+                </span>
+                <h1 class="text-xl">@2024 - Present | All Rights Reserved.</h1>
+                <p class="text-2xl font-bold">Jaderhin Clint Lucero</p>
+                <p class="text-xl">Code by <span class="font-bold">Joshua Tania.</span> </p>
             </div>
             <p>~</p>
-            <div class="flex md:flex-col md:items-end gap-10 md:gap-3">
-                <p>Home</p>
-                <p>Projects</p>
-                <p>About</p>
-                <p>Hire Me</p>
+            <div class="flex md:flex-col md:items-end gap-10 md:gap-3
+            *:font-Alumni_Sans *:text-2xl">
+                
+                <p class="cursor-pointer hover:font-bold" @click="topFunction">Home</p>
+                <a class="hover:font-bold" href="/projects">
+                    <p>Projects</p>
+                </a>
+                <a class="hover:font-bold" href="#About">
+                    <p>About</p>
+                </a>
+                <a class="hover:font-bold" href="/">
+                    <p>Hire Me</p>
+                </a>
             </div>
         </div>
     </div>
