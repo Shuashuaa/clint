@@ -1,5 +1,6 @@
 {
   "name": "clint",
+  "description": "a portfolio website for jaderhin clint lucero",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -12,6 +13,7 @@
   },
   "dependencies": {
     "@amineyarman/kinesis": "^1.0.6",
+    "copy-text-to-clipboard": "^3.2.0",
     "primeicons": "^7.0.0",
     "tailwindcss-animate": "^1.0.7",
     "vue": "^3.5.12",
