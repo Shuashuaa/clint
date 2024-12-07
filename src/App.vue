@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar.vue'
 </script>
 
 <template>
-	<div class="bg-[#F7CAC9] dark:bg-[#2C2C2C]">
+	<div class="bg-[#F7CAC9] dark:bg-[#242625] md:bg-transparent">
 		<Navbar class="sticky top-0 z-20"/>
 		<RouterView/>
 	</div>
