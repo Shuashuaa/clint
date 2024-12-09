@@ -22,7 +22,7 @@ defineProps({
         dark:bg-[#242625] dark:bg-[radial-gradient(ellipse_80%_80%_at_80%_80%,#93a9d1,rgba(255,255,255,0))] transition-all ease-in-out md:relative">
             
             <p data-kinesisscroll-item data-ks-transform="scale" data-ks-strength="20" 
-            class="fontbgl text-[#ffd8d8] dark:text-[#2C2C2C] font-[sans-serif] font-black italic tracking-widest text-5xl md:text-9xl text-shadow-sm top-[20%] left-[20%] w-1/2 md:w-full absolute">
+            class="fontbgl text-[#ffd8d8] dark:text-[#2C2C2C] font-[sans-serif] font-black italic tracking-widest text-5xl md:text-8xl text-shadow-sm top-[20%] left-[20%] w-1/2 md:w-full absolute">
                 {{ bgNameLeft }}
             </p>
             <p data-kinesisscroll-item data-ks-transform="scale" data-ks-strength="20" 
