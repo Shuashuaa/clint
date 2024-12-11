@@ -39,17 +39,17 @@ defineProps({
             <div class="flex flex-col items-center md:items-start">
                 <!-- <img class="mb-3" width="120" src="../assets/imgs/clint.png" alt=""> -->
                 <span class="mb-3 text-2xl text-white relative">
-                    <img class="absolute invisible dark:visible w-[100px] md:w-[40%]" src="../assets/imgs/CLINT-default.png" alt="">
-                    <img class="visible dark:invisible w-[150px] md:w-[40%]" src="../assets/imgs/CLINT-black.png" alt="">
+                    <img class="absolute invisible dark:visible w-[100px] md:w-[70%]" src="../assets/imgs/CLINT-default.svg" alt="">
+                    <img class="visible dark:invisible w-[150px] md:w-[70%]" src="../assets/imgs/CLINT-black.svg" alt="">
                 </span>
                 <h1 class="text-xl">@2024 - Present | All Rights Reserved.</h1>
-                <p class="text-2xl font-bold">Jaderhin Clint Lucero</p>
+                <p class="text-3xl font-bold">Jaderhin Clint Lucero</p>
                 <a href="https://shuashuaa.netlify.app/" target="_blank">
                     <p class="text-xl">Code by <span class="font-bold">Joshua Tania.</span> </p>
                 </a>
                 
             </div>
-            <p>~</p>
+            <!-- <p>~</p> -->
             <div class="flex md:flex-col md:items-end gap-7 md:gap-3
             *:font-Alumni_Sans *:text-2xl">
                 
