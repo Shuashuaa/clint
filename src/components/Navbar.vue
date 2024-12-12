@@ -51,22 +51,26 @@ onMounted(() => {
             </span>
 
             <span class="pt-2 text-2xl cursor-pointer md:hidden block">
-                <i class="pi text-white" :class="burgerIcon" name="menu" @click="toggleMenu()"></i>
+                <i @click="toggleMenu()" class="pi text-white" name="menu" 
+                    :class="burgerIcon"
+                ></i>
             </span>
         </div>
         
         <ul class="top-[55px] md:flex md:items-center gap-10 z-[1] md:z-auto md:static absolute 
-        w-full left-0 md:w-auto md:py-0 py-4 md:pl-0
-        transition-all ease-in-out duration-500 text-white h-screen md:h-full bg-[#F7CAC9] dark:bg-[#242625] md:bg-transparent md:dark:bg-transparent
-        *:md:py-0 *:text-[#242625] *:dark:text-white *:text-2xl *:font-Alumni_Sans" :class="menuClass">
+            w-full left-0 md:w-auto md:py-0 py-4 md:pl-0
+            transition-all ease-in-out duration-500 text-white h-screen md:h-full bg-[#F7CAC9] dark:bg-[#242625] md:bg-transparent md:dark:bg-transparent
+            *:md:py-0 *:text-[#242625] *:dark:text-white *:text-2xl *:font-Alumni_Sans" 
+            :class="menuClass"
+        >
         
-            <RouterLink @click="toggleMenu()" to="/" class="hover:text-[#244e48] duration-500 text-center">
+            <a @click="toggleMenu()" href="/" class="hover:text-[#244e48] duration-500 text-center">
                 <li class="py-6 md:py-0 hover:bg-[#9EC0BB]">Home</li>
-            </RouterLink>
-            <RouterLink @click="toggleMenu()" to="/projects" class="hover:text-[#244e48] duration-500 text-center">
+            </a>
+            <a @click="toggleMenu()" href="/projects" class="hover:text-[#244e48] duration-500 text-center">
                 <li class="py-6 md:py-0 hover:bg-[#9EC0BB]">Projects</li>
-            </RouterLink>
-            <a @click="toggleMenu()" href="#about" class="hover:text-[#244e48] duration-500 text-center">
+            </a>
+            <a @click="toggleMenu()" href="..#about" class="hover:text-[#244e48] duration-500 text-center">
                 <li class="py-6 md:py-0 hover:bg-[#9EC0BB]">About</li>
             </a>
             <li class="text-center my-6 md:my-0">
