@@ -42,7 +42,7 @@ onMounted(() => {
 
 <template>
     <!-- by default canvas is `display:block` so here if the canvas reach `md:` or more will flex the nav children components -->
-    <nav class="md:flex md:items-center md:justify-between md:p-10" :class="isScrolled">
+    <nav class="md:flex md:items-center md:justify-between md:p-10 transition-all ease-in-out duration-1000" :class="isScrolled">
         <div class="px-5 py-2 md:p-0 flex justify-between items-center">
             <span class="text-2xl text-white relative">
                 <img class="absolute invisible dark:visible w-[50px] md:w-[100px]" src="../assets/imgs/CLINT-default.svg" alt="">
@@ -59,13 +59,13 @@ onMounted(() => {
         
         <ul class="top-[55px] md:flex md:items-center gap-10 z-[1] md:z-auto md:static absolute 
             w-full left-0 md:w-auto md:py-0 py-4 md:pl-0
-            transition-all ease-in-out duration-500 text-white h-screen md:h-full bg-[#F7CAC9] dark:bg-[#242625] md:bg-transparent md:dark:bg-transparent
+            text-white h-screen md:h-full bg-[#F7CAC9] dark:bg-[#242625] md:bg-transparent md:dark:bg-transparent
             *:md:py-0 *:text-[#242625] *:dark:text-white *:text-2xl *:font-Alumni_Sans" 
             :class="menuClass"
         >
         
             <a @click="toggleMenu()" href="/" class="hover:text-[#244e48] duration-500 text-center">
-                <li class="py-6 md:py-0 hover:bg-[#9EC0BB]">Home</li>
+                <li class="py-6 md:py-0 hover:bg-[#9EC0BB] hover:font-bold">Home</li>
             </a>
             <a @click="toggleMenu()" href="/projects" class="hover:text-[#244e48] duration-500 text-center">
                 <li class="py-6 md:py-0 hover:bg-[#9EC0BB]">Projects</li>
