@@ -65,13 +65,13 @@ onMounted(() => {
         >
         
             <a @click="toggleMenu()" href="/" class="hover:text-[#244e48] duration-500 text-center">
-                <li class="py-6 md:py-0 hover:bg-[#9EC0BB] hover:font-bold">Home</li>
+                <li class="py-6 md:py-0 hover:bg-[#9EC0BB] md:hover:bg-transparent hover:font-bold">Home</li>
             </a>
             <a @click="toggleMenu()" href="/projects" class="hover:text-[#244e48] duration-500 text-center">
-                <li class="py-6 md:py-0 hover:bg-[#9EC0BB]">Projects</li>
+                <li class="py-6 md:py-0 hover:bg-[#9EC0BB] md:hover:bg-transparent hover:font-bold">Projects</li>
             </a>
             <a @click="toggleMenu()" href="..#about" class="hover:text-[#244e48] duration-500 text-center">
-                <li class="py-6 md:py-0 hover:bg-[#9EC0BB]">About</li>
+                <li class="py-6 md:py-0 hover:bg-[#9EC0BB] md:hover:bg-transparent hover:font-bold">About</li>
             </a>
             <li class="text-center my-6 md:my-0">
                 <button @click="toggleMenu()" class="bg-[#93a9d1] text-white font-bold duration-500 px-6 py-2 hover:bg-[#798499] rounded">
