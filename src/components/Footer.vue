@@ -22,7 +22,7 @@ defineProps({
 </script>
 
 <template>
-    <div class="w-full bg-white dark:bg-[#242625]">
+    <div class="w-full bg-white dark:bg-[#242625] transition-all ease-in-out duration-1000">
         <div class="flex flex-col text-center items-center py-[100px] *:dark:text-white *:text-[#242625] *:font-Inter">
             <p class="text-5xl pb-1 font-bold">is there a spark?</p>
             <p class="text-2xl pb-5">Let's Work Together!</p>
@@ -32,8 +32,8 @@ defineProps({
             </p>
         </div>
 
-        <div class="flex flex-col md:flex-row justify-center md:justify-between items-center rounded-t-[2.5rem] shadow-inner py-[40px] md:px-[150px] gap-3 
-        dark:bg-[#93a9d1] bg-[#F7CAC9] bg-[radial-gradient(ellipse_80%_80%_at_80%_80%,#93a9d1,rgba(255,255,255,0))] 
+        <div class="flex flex-col md:flex-row justify-center md:justify-between items-center rounded-t-[2.5rem] shadow-inner pt-[50px] pb-[30px] md:px-[150px] gap-3 
+        dark:bg-[#  ] bg-[#F7CAC9] bg-[radial-gradient(ellipse_80%_80%_at_80%_80%,#93a9d1,rgba(255,255,255,0))] 
         *:text-[#242625] *:font-Alumni_Sans *:tracking-wide"
         >
             <div class="flex flex-col items-center md:items-start">
@@ -44,13 +44,15 @@ defineProps({
                 </span>
                 <h1 class="text-xl">@2024 - Present | All Rights Reserved.</h1>
                 <p class="text-3xl font-bold">Jaderhin Clint Lucero</p>
+                <hr>
+                <br>
                 <a href="https://shuashuaa.netlify.app/" target="_blank">
-                    <p class="text-xl">Code by <span class="font-bold">Joshua Tania.</span> </p>
+                    <p class="text-lg">Code by <span class="font-bold hover:underline transition-all ease-in-out duration-500">Joshua Tania.</span> </p>
                 </a>
                 
             </div>
             <!-- <p>~</p> -->
-            <div class="flex md:flex-col md:items-end gap-7 md:gap-3
+            <div class="flex md:flex-col md:items-end gap-7 md:gap-2
             *:font-Alumni_Sans *:text-2xl">
                 
                 <p class="cursor-pointer hover:font-bold" @click="topFunction">Home</p>
