@@ -8,7 +8,7 @@ import router from './router'
 
 // title meta
 router.beforeEach((to, from, next) => {
-    document.title = to.meta.title || '404';
+    document.title = (to.meta.title as string) || '404';
     next();
 });
 
