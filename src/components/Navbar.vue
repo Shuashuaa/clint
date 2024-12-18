@@ -60,18 +60,18 @@ onMounted(() => {
         <ul class="top-[55px] md:flex md:items-center gap-10 z-[1] md:z-auto md:static absolute 
             w-full left-0 md:w-auto md:py-0 py-4 md:pl-0
             text-white h-screen md:h-full bg-[#F7CAC9] dark:bg-[#242625] md:bg-transparent md:dark:bg-transparent
-            *:md:py-0 *:text-[#242625] *:dark:text-white *:text-2xl *:font-Alumni_Sans" 
+            *:md:py-0 *:text-[#242625] *:dark:text-white *:text-md *:font-Inter " 
             :class="menuClass"
         >
         
             <a @click="toggleMenu()" href="/" class="hover:text-[#244e48] duration-500 text-center">
-                <li class="py-6 md:py-0 hover:bg-[#9EC0BB] md:hover:bg-transparent hover:font-bold">Home</li>
+                <li class="my-8 md:my-0 hover:bg-[#9EC0BB] md:hover:bg-transparent hover:font-bold">Home</li>
             </a>
             <a @click="toggleMenu()" href="/projects" class="hover:text-[#244e48] duration-500 text-center">
-                <li class="py-6 md:py-0 hover:bg-[#9EC0BB] md:hover:bg-transparent hover:font-bold">Projects</li>
+                <li class="my-6 md:my-0 hover:bg-[#9EC0BB] md:hover:bg-transparent hover:font-bold">Projects</li>
             </a>
             <a @click="toggleMenu()" href="..#about" class="hover:text-[#244e48] duration-500 text-center">
-                <li class="py-6 md:py-0 hover:bg-[#9EC0BB] md:hover:bg-transparent hover:font-bold">About</li>
+                <li class="my-6 md:my-0 hover:bg-[#9EC0BB] md:hover:bg-transparent hover:font-bold">About</li>
             </a>
             <li class="text-center my-6 md:my-0">
                 <button @click="toggleMenu()" class="bg-[#93a9d1] text-white font-bold duration-500 px-6 py-2 hover:bg-[#798499] rounded">
