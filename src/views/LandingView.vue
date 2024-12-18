@@ -18,15 +18,16 @@ defineProps({
 <template>
     <div>
         <div data-kinesistransformer data-ks-interaction="mouse" data-ks-initialized="true" 
-        class="flex flex-col items-center pt-5 justify-center overflow-hidden md:h-[95svh] bg-[#F7CAC9] bg-[radial-gradient(ellipse_80%_80%_at_80%_80%,#93a9d1,rgba(255,255,255,0))] 
-        dark:bg-[#242625] dark:bg-[radial-gradient(ellipse_80%_80%_at_80%_80%,#93a9d1,rgba(255,255,255,0))] transition-all ease-in-out md:relative">
+        class="flex flex-col items-center pt-5 justify-center overflow-hidden font-Inter md:h-[95svh] bg-[#F7CAC9] bg-[radial-gradient(ellipse_80%_80%_at_80%_80%,#93a9d1,rgba(255,255,255,0))] 
+        dark:bg-[#242625] dark:bg-[radial-gradient(ellipse_80%_80%_at_80%_80%,#93a9d1,rgba(255,255,255,0))] transition-all ease-in-out duration-1000 md:relative">
+
             <container>
                 <p data-kinesisscroll-item data-ks-transform="scale" data-ks-strength="30" 
                 class="fontbgl text-[#ffd8d8] dark:text-[#2C2C2C] font-[sans-serif] font-black italic tracking-widest text-5xl md:text-8xl text-shadow-sm top-[20%] left-[20%] w-1/2 md:w-full absolute">
                     {{ bgNameLeft }}
                 </p>
                 <p data-kinesisscroll-item data-ks-transform="scale" data-ks-strength="30" 
-                class="fontbgr text-[#b6d1cb] dark:text-[#2C2C2C] font-[sans-serif] font-black italic tracking-widest text-end text-6xl md:text-8xl text-shadow-sm top-[50%] right-5 md:top-[40%] md:right-[15%]  absolute">
+                class="fontbgr text-[#b6d1cb] dark:text-[#2C2C2C] font-[sans-serif] font-black italic tracking-widest text-end text-5xl md:text-7xl text-shadow-sm top-[50%] right-10 md:top-[40%] md:right-[15%] w-1/2 absolute">
                     {{ bgNameRight }}
                 </p>
             </container>
@@ -54,6 +55,6 @@ defineProps({
             <i class="pi pi-twitter text-2xl md:fixed left-10 bottom-[35%] z-20"></i>
             <i class="pi pi-instagram text-2xl md:fixed left-10 bottom-[30%] z-20"></i>
             <i class="pi pi-linkedin text-2xl md:fixed left-10 bottom-[25%] z-20"></i> -->
-        </div>
+            </div>
     </div >
 </template>
