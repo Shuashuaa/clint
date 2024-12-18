@@ -42,7 +42,9 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="bg-white dark:bg-[#242625] flex flex-col justify-center items-center relative">
+    <div class="bg-white dark:bg-[#242625] flex flex-col justify-center items-center relative transition-all ease-in-out duration-1000 
+    *:font-Inter"
+    >
         <h1 class="text-[#242625] dark:text-white text-center py-10 text-3xl">My Work</h1>
         
         <div v-if="isCategoriesOn" class="flex items-center justify-center py-4 md:py-8 flex-wrap">
@@ -161,7 +163,7 @@ const props = defineProps({
             </div> -->
         </div>
 
-        <a href="/projects" v-if="showSeeMore" class=" absolute text-center align-center z-10 w-full p-[100px] font-Inter text-lg text-shadow-lg text-white bottom-0 bg-gradient-to-t from-[#070707] via-[rgba(44,44,44,0.8)] hover:via-[rgba(44,44,44,0.85)] to-transparent
+        <a href="/projects" v-if="showSeeMore" class=" absolute text-center align-center z-10 w-full p-[100px] text-lg text-shadow-lg text-white bottom-0 bg-gradient-to-t from-[#070707] via-[rgba(44,44,44,0.8)] hover:via-[rgba(44,44,44,0.85)] to-transparent
         *:hover:tracking-wider *:transition-all *:ease-in-out *:duration-500 *:hover:text-xl">
             <p>see more</p>
         </a>
