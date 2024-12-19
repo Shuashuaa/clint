@@ -19,3 +19,6 @@ npm run dev
 ```sh
 npm run build
 ```
+
+more information for infoView
+footer details
