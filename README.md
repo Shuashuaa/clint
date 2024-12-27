@@ -1,6 +1,6 @@
 # clint
 
-- vue3, tailwindcss, vite, gsap
+- vue3, tailwindcss, vite, gsap and soon with astrojs
 
 ## Project Setup
 
