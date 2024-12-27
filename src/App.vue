@@ -4,8 +4,8 @@ import Navbar from '@/components/Navbar.vue'
 </script>
 
 <template>
-	<div class="bg-[#F7CAC9] dark:bg-[#242625]">
-		<Navbar class="sticky top-0 z-20"/>
+	<div style="overflow-x: hidden;" class="bg-[#F7CAC9] dark:bg-[#242625] transition-all ease-in-out duration-1000">
+		<Navbar class="fixed w-full top-0 z-20"/> <!--sticky no w-full -->
 		<RouterView/>
 	</div>
 	
