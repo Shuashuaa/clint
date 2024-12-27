@@ -60,7 +60,7 @@ onMounted(() => {
         <ul class="top-[55px] md:flex md:items-center gap-10 z-[1] md:z-auto md:static absolute 
             w-full left-0 md:w-auto md:py-0 py-4 md:pl-0
             text-white h-screen md:h-full bg-[#F7CAC9] dark:bg-[#242625] md:bg-transparent md:dark:bg-transparent
-            *:md:py-0 *:text-[#242625] *:dark:text-white *:text-md *:font-Inter " 
+            *:md:py-0 *:text-[#242625] *:dark:text-white *:text-md *:font-Inter transition-all ease-in-out duration-1000" 
             :class="menuClass"
         >
         
