@@ -16,7 +16,7 @@ defineProps({
 </script>
 
 <template>
-    <div>
+    <div class="mt-[60px] md:mt-[120px]">
         <div data-kinesistransformer data-ks-interaction="mouse" data-ks-initialized="true" 
         class="flex flex-col items-center pt-5 justify-center overflow-hidden font-Inter md:h-[95svh] bg-[#F7CAC9] bg-[radial-gradient(ellipse_80%_80%_at_80%_80%,#93a9d1,rgba(255,255,255,0))] 
         dark:bg-[#242625] dark:bg-[radial-gradient(ellipse_80%_80%_at_80%_80%,#93a9d1,rgba(255,255,255,0))] transition-all ease-in-out duration-1000 md:relative">
