@@ -9,15 +9,16 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView,
-      meta: { title: 'Clint | Home' },
+      meta: { title: 'Clint - Home' },
     },
     {
       path: '/projects',
       name: 'projects',
       component: GalleryView,
-      meta: { title: 'Clint | Projects' }
+      meta: { title: 'Clint - Projects' }
 
       // add error page | not found page
+      
     },
   ],
 })
