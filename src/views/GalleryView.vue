@@ -42,7 +42,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="bg-white dark:bg-[#242625] flex flex-col justify-center items-center relative transition-all ease-in-out duration-1000 
+    <div class="mt-12 md:mt-[120px] bg-white dark:bg-[#242625] flex flex-col justify-center items-center relative transition-all ease-in-out duration-1000 
     *:font-Inter"
     >
         <h1 class="text-[#242625] dark:text-white text-center py-10 text-3xl">My Work</h1>
