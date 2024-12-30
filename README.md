@@ -1,6 +1,10 @@
 # clint
 
+<<<<<<< HEAD
 - vue3, tailwindcss, vite, gsap, vue-kinesis
+=======
+- vue3, tailwindcss, vite, gsap, vue-kinesis, and soon with astrojs
+>>>>>>> aa5b0b63351070cb265fe9f59574de6367a2773d
 
 ## Project Setup
 
