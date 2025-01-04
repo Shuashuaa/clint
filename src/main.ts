@@ -12,6 +12,13 @@ router.beforeEach((to, from, next) => {
     next();
 });
 
+import { type ClassValue, clsx } from 'clsx'
+import { twMerge } from 'tailwind-merge'
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs))
+}
+
 const app = createApp(App)
 
 app.use(router)
