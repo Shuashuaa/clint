@@ -22,7 +22,7 @@ const links = ref([
 		:links="links"
 	/>
 
-	<InfoView info="Hi, I'm Jaderhin Clint Lucero. I'm a recent Bachelor of Science in Information Technology graduate with a passion for programming. 
+	<InfoView info="Hi 👋🏼, I'm Jaderhin Clint Lucero. I'm a recent Bachelor of Science in Information Technology graduate with a passion for programming. 
 		I’ve worked as an I.T. technician and am currently a virtual assistant. Aside from my tech skills, I'm also an artist, dancer, and crocheter. 
 		I enjoy expressing myself through painting, digital art, and creating intricate crochet pieces."
 	/>
