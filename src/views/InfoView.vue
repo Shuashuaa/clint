@@ -1,14 +1,16 @@
 <script setup lang="ts">
+import Description from '@/components/Description.vue';
+
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener("DOMContentLoaded", function () {
     const cards = [
-        { id: "#card-1", endTranslateX: -2000, rotate: 45},
-        { id: "#card-2", endTranslateX: -1000, rotate: -30},
-        { id: "#card-3", endTranslateX: -2000, rotate: 45},
-        { id: "#card-4", endTranslateX: -1500, rotate: -30},
+        { id: "#card-1", endTranslateX: -2000, rotate: 45 },
+        { id: "#card-2", endTranslateX: -1000, rotate: -30 },
+        { id: "#card-3", endTranslateX: -2000, rotate: 45 },
+        { id: "#card-4", endTranslateX: -1500, rotate: -30 },
     ];
 
     ScrollTrigger.create({
@@ -17,16 +19,16 @@ document.addEventListener("DOMContentLoaded", function () {
         end: "+=900vh",
         scrub: 1,
         pin: true,
-        // pinSpacing: false,
+
         onUpdate: (self) => {
             gsap.to(".wrapper-404", {
-                y: -250,
+                y: -100,
                 x: `${-350 * self.progress}vw`,
                 duration: 0.5,
                 ease: "power3.out",
             });
         },
-        markers: true
+        // markers: true
     });
 
     cards.forEach((card) => {
@@ -55,14 +57,17 @@ defineProps({
 </script>
 
 <template>
-    <div style="position: relative;">
-        <div class="container h-[150vh] md:h-[200vh]">
+
+    <Description :desc="info"/>
+
+    <div style="position: relative;" class="pattern bg-[#f7cac9] dark:bg-[#242625] transition-all ease-in-out duration-1000">
+        <div class="container ">
             <nav>
                 <!-- <a href="#">{{ info }}</a> -->
             </nav>
 
             <section class="wrapper-404">
-                <h1 class="text-[#242625] dark:text-[#fff]">page not found</h1>
+                <h1 class="text-[#242625] dark:text-[#fff]">Turning dreams</h1>
 
                 <div class="card" id="card-1">
                     <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
@@ -73,28 +78,28 @@ defineProps({
                 <div class="card" id="card-3">
                     <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
                 </div>
-                <div class="card" id="card-4">
+                <div class="card top-[15%] right-[-40%] lg:top-[15%] lg:right-[10%]" id="card-4">
                     <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="">
                 </div>
             </section>
-            <section class="outro">
-                <!-- <slot/> -->
-            </section>
         </div>
+        <section class="outro">
+            <!-- <slot/> -->
+            <h2 class="text-[#242625] dark:text-[#fff] text-[32vw] lg:text-[24vw] font-black">Into</h2>
+            <h2 class="text-[#242625] dark:text-[#fff] text-[32vw] lg:text-[24vw] absolute top-[15%] lg:top-[35%] font-black text-shadow-lg">Reality</h2>
+            <div class="w-[300px] h-[300px] lg:w-[350px] lg:h-[350px] absolute top-[40%] right-[13%] lg:top-[15%] lg:right-[15%] rotate-12">
+                <img class="rounded-2xl" src="../assets/imgs/reality.jpg" alt="">
+            </div>
+        </section>
     </div>
-    
-
-
-    <!-- <div class="flex justify-center h-[100svh] w-full bg-white selection:bg-[#F7CAC9] selection:text-[#495d81] transition-all ease-in-out duration-1000
-    p-[15%] md:p-[5%] *:font-Inter *:text-lg *:tracking-wide">
-        <p class="md:w-[50svw]">
-            
-        </p>
-    </div> -->
     
 </template>
 
 <style scoped>
+
+* {
+    transition: all 0.1s ease;
+}
 
 img {
     width: 100%;
@@ -110,15 +115,24 @@ a {
 
 h1 {
     width: 100%;
-    font-size: 48vw;
+    font-size: 36vw;
     font-weight: 400;
-    text-align: center;
+    /* text-align: center; */
+    margin: 0;
+}
+
+h2 {
+    width: 100%;
+    /* font-size: 18vw; */
+    /* font-weight: 400; */
+    /* text-align: center; */
     margin: 0;
 }
 
 .container {
-    width: 100%;
-    /* height: 200vh; Tricky for the next component */
+    /* width: 100%; */
+    height: 200vh; 
+    /* Tricky for the next component */
 }
 
 nav {
@@ -148,7 +162,7 @@ nav {
 
 #card-1{
     top: 50%;
-    left: 20%;
+    left: 30%;
 }
 
 #card-2{
@@ -161,14 +175,16 @@ nav {
     left: 60%;
 }
 
-#card-4{
+/* #card-4{
     top: 15%;
-    left: 80%;
-}
+    right: 10%;
+} */
 
 .outro {
+    align-items: center;
     position: absolute;
-    top: 150vh;
+    left: 0;
+    top: 100vh;
     width: 100%;
     height: 100vh;
 }
