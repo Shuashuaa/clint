@@ -35,10 +35,10 @@ defineProps({
         </div>
 
         <div class="flex flex-col md:flex-row justify-center md:justify-between items-center rounded-t-[2.5rem] shadow-inner pt-[50px] pb-[30px] md:px-[150px] gap-3 
-        dark:bg-[#  ] bg-[#F7CAC9] bg-[radial-gradient(ellipse_80%_80%_at_80%_80%,#93a9d1,rgba(255,255,255,0))] 
+        dark:bg-[#242625] bg-[#F7CAC9] bg-[radial-gradient(ellipse_80%_80%_at_20%_70%,#93a9d1,rgba(255,255,255,0))] 
         *:text-[#242625] *:tracking-wide"
         >
-            <div class="flex flex-col items-center md:items-start">
+            <div class="flex flex-col items-center md:items-start *:dark:text-white">
                 <!-- <img class="mb-3" width="120" src="../assets/imgs/clint.png" alt=""> -->
                 <span class="mb-3 text-2xl text-white relative">
                     <img class="absolute invisible dark:visible w-[150px] md:w-[70%]" src="../assets/imgs/CLINT-default.svg" alt="">
@@ -56,7 +56,7 @@ defineProps({
             <!-- <p>~</p> -->
             <!-- *:font-Alumni_Sans -->
             <div class="flex md:flex-col md:items-end gap-7 md:gap-2
-            *:text-md">
+            *:text-md *:dark:text-white">
                 
                 <p class="cursor-pointer hover:font-bold" @click="topFunction">Home</p>
                 <a class="hover:font-bold" href="/projects">
