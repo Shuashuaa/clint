@@ -61,7 +61,7 @@ defineProps({
     <Description :desc="info"/>
 
     <div style="position: relative;" class="pattern bg-[#f7cac9] dark:bg-[#242625] transition-all ease-in-out duration-1000">
-        <div class="container ">
+        <div class="container">
             <nav>
                 <!-- <a href="#">{{ info }}</a> -->
             </nav>
@@ -70,7 +70,7 @@ defineProps({
                 <h1 class="text-[#242625] dark:text-[#fff]">Turning dreams</h1>
 
                 <div class="card" id="card-1">
-                    <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
+                    <img src="../assets/imgs/reality-1.png" alt="">
                 </div>
                 <div class="card" id="card-2">
                     <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="">
