@@ -72,7 +72,7 @@ onMounted(() => {
             <a @click="toggleMenu()" href="/projects" class="hover:text-[#244e48] duration-500 text-center">
                 <li class="my-6 md:my-0 hover:bg-[#9EC0BB] md:hover:bg-transparent md:hover:underline
                 dark:md:hover:decoration-blue-200 dark:md:hover:decoration-2 dark:md:hover:underline-offset-8 dark:hover:text-blue-200
-                md:hover:decoration-[#4e1d1c] md:hover:decoration-2 md:hover:underline-offset-8 hover:text-[#4e1d1c]">Projects</li>
+                md:hover:decoration-[#4e1d1c] md:hover:decoration-2 md:hover:underline-offset-8 hover:text-[#4e1d1c]">Work</li>
             </a>
             <a @click="toggleMenu()" href="..#about" class="hover:text-[#244e48] duration-500 text-center">
                 <li class="my-6 md:my-0 hover:bg-[#9EC0BB] md:hover:bg-transparent md:hover:underline
