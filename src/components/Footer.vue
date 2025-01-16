@@ -55,8 +55,8 @@ defineProps({
                 <!-- *:dark:text-white *:dark:shadow-[#474545] -->
                 <!-- <img class="mb-3" width="120" src="../assets/imgs/clint.png" alt=""> -->
                 <span class="mb-3 text-2xl text-white relative">
-                    <img class="absolute invisible dark:visible w-[150px] md:w-[70%]" src="../assets/imgs/CLINT-default.svg" alt="">
-                    <img class="visible dark:invisible w-[150px] md:w-[70%]" src="../assets/imgs/CLINT-black.svg" alt="">
+                    <img class="imgr absolute invisible dark:visible w-[150px] md:w-[70%]" src="../assets/imgs/CLINT-default.svg" alt="">
+                    <img class="imgr visible dark:invisible w-[150px] md:w-[70%]" src="../assets/imgs/CLINT-black.svg" alt="">
                 </span>
                 <h1 class="text-sm dark:text-white text-gray-800">@2024 - Present | All Rights Reserved.</h1>
                 <p class="text-lg font-bold dark:text-white text-gray-800">Jaderhin Clint Lucero</p>
