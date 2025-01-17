@@ -45,8 +45,8 @@ onMounted(() => {
     <nav class="md:flex md:items-center md:justify-between md:p-10 transition-all ease-in-out duration-1000" :class="isScrolled">
         <div class="px-5 py-2 md:p-0 flex justify-between items-center">
             <span class="text-2xl text-white relative">
-                <img class="absolute invisible dark:visible w-[50px] md:w-[100px]" src="../assets/imgs/CLINT-default.svg" alt="">
-                <img class="visible dark:invisible w-[50px] md:w-[100px]" src="../assets/imgs/CLINT-black.svg" alt="">
+                <img class="imgr absolute invisible dark:visible w-[50px] md:w-[100px]" src="../assets/imgs/CLINT-default.svg" alt="">
+                <img class="imgr visible dark:invisible w-[50px] md:w-[100px]" src="../assets/imgs/CLINT-black.svg" alt="">
                 <!-- Clint. -->
             </span>
 
