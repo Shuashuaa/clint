@@ -28,6 +28,12 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.imgr {
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+
 /* .glass {
   background-image: url("../assets/imgs/glass.png") !important; 
   background-size: cover !important;
